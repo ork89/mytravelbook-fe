@@ -1,39 +1,98 @@
 .App {
   text-align: center;
+  padding: 0 2rem;
+
+  --background: #FFF;
+  --primary-color: #8fdde7;
+  --secondary-color: #b6e5d8;
+  --primary-accent-color: #ef7c8e;  
+  --second-accent-color: #faa0a8;
+  --accent-color: #fbe5c8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.button {
+  appearance: none;
+  background: none;
+  font-size: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
+  outline: none;
+  border: 2px solid transparent;
+  color: var(--background);
+  padding-bottom: 4px;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  border-radius: 2px;
+  transition: all 0.15s;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button:hover,
+.button:focus {
+  color: #298d7166;
+  border: 2px solid #35b49033;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.button:active {
+  background-color: #35b49033;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.btn-link {
+  outline: none;
+  border: none;
+  font-size: medium;
+  color: var(--second-accent-color);
+  background-color: transparent;
+}
+
+.btn-link:hover {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-accent-color);
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid rgb(194 194 194 / 80%);
+  padding: 10px;
+  margin: 5px;  
+}
+
+.input_container input {
+  background: red;
+  color: inherit;
+  flex : auto 1 1;
+  width : 100%;
+  background : none;
+  background-color: transparent;
+}
+
+.input_container .fa{
+  padding: 10px;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+input::placeholder {
+  color: #5c5c5ca8;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
 }

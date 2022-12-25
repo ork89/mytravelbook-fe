@@ -1,0 +1,21 @@
+/* LOGIN */
+.heading > h1 {
+    margin-top: 3rem;
+    color: var(--primary-color)
+}
+
+.heading {
+    margin: 4rem 0;
+    color: var(--secondary-color)
+}
+
+form {
+    width: 300px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;    
+    margin: auto;
+    gap: 15px;
+}
+
+/* LOGIN */
